@@ -1,0 +1,7 @@
+- Comando para instalar react native hooks:
+
+npm i @react-native-community/hooks
+
+- Comando para instalar react native:
+
+npm i -g expo-cli

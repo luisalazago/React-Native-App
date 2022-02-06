@@ -1,0 +1,17 @@
+1. Primero se debe instalar la librería de expo (check the instalations file).
+
+2. Luego se deben instalar las extensiones de react para visual studio (opcional).
+
+3. Después se debe instalar la expo client en los dispositivos donde se va a probar la app.
+
+4. Luego se debe colocar el comando: expo init "Name of the Project".
+	* Aparecerá las opciones de seleccionar un template, es recomendado usar el "blank".
+	* Se procederá a inicializar el proyecto.
+
+5. Para iniciar el proyecto se coloca el comando: npm start
+
+6. Para correr en android se coloca el comando: npm run android
+
+7. Para correr en iOS se coloca el comando: npm run ios
+
+8. Para correr como una app web se coloca el comando: npm run web.

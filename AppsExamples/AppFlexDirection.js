@@ -1,5 +1,9 @@
 import React from "react";
-import {View} from 'react-native';
+import { 
+  StyleSheet, Dimensions, SafeAreaView,
+  Platform, StatusBar, View
+} from 'react-native';
+import {useDimensions, useDeviceOrientation} from "@react-native-community/hooks";
 
 /* 
   SafeAreaView: let the text into the box to the app.
@@ -11,7 +15,6 @@ import {View} from 'react-native';
   useDimensions: get the default dimensions of the device.
   Flex: is use to configure the dimensions of the component box.
   FlexDirection: with this property we can change the orientation of the contet below.
-  JustifyAndAling: these properties modify the position and the access of the object.
 */
 
 export default function App() {
@@ -19,20 +22,17 @@ export default function App() {
     <View style={{
       backgroundColor: "#fff",
       flex: 1,
-      flexDirection: "row",
-      justifyContent: "center", // Main access
-      alignItems: "center" // Secondary access
+      flexDirection: "row"
     }}>
       <View style={{
         backgroundColor: "gold",
         width: 100,
-        height: 300
+        height: 100
       }}/>
       <View style={{
         backgroundColor: "dodgerblue",
         width: 100,
-        height: 100,
-        alignSelf: "flex-start"
+        height: 100
       }}/>
       <View style={{
         backgroundColor: "tomato",

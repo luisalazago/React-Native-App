@@ -1,7 +1,7 @@
 import React from "react";
 import { 
   StyleSheet, Button, SafeAreaView,
-  Platform, StatusBar, View
+  Platform, StatusBar
 } from 'react-native';
 
 /* 
@@ -12,7 +12,7 @@ import {
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      
+      <Button title="Click me!" onPress={() => console.log("Button Tapped")}/>
     </SafeAreaView>
   );
 }
